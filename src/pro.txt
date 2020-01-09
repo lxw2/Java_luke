@@ -1,0 +1,4 @@
+url=jdbc:mysql:///db2
+user=root
+password=123
+driver=com.mysql.jdbc.Driver

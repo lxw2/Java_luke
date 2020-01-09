@@ -1,0 +1,29 @@
+(new Comparator<sTu>() {
+    @Override
+    //以总分为标准排行
+    public int compare(sTu o1, sTu o2) {
+        //判断二人的总分
+        int num = (o1.sum()-o2.sum())>0? -1:1;
+        int num2= o1.sum()-o2.sum() == 0? (o1.getChinese()>o2.getChinese()? 1:-1):num;
+        return num2;
+    }
+==============================
+    int compare(T o1, T o2);
+
+=============================
+ public TreeSet(Comparator<? super E> comparator) {
+    this(new TreeMap<>(comparator));
+}
+=============================
+this
+TreeSet(NavigableMap<E,Object> m) {
+        this.m = m;
+    }
+
+
+=============================
+public TreeMap(Comparator<? super K> comparator) {
+        this.comparator = comparator;
+    }
+
+=============================
